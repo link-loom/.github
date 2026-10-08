@@ -1,45 +1,71 @@
-# Link Loom
-Link Loom is a cutting-edge organization committed to developing powerful tools and frameworks that empower developers to build scalable, efficient, and sophisticated applications. Our suite of projects provides an integrated solution for the end-to-end development of modern software applications, from backend to frontend.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/link-loom/.github/main/profile/assets/link-loom.svg" alt="Link Loom" width="300">
+</p>
 
-## Our Projects
-### Link Loom Core SDK
-At the heart of our ecosystem, the Link Loom Core SDK is a comprehensive toolkit designed to facilitate the development of both microservices and large-scale monolithic applications. It encapsulates a wide array of features, including:
+<p align="center">
+  Open-source building blocks for software that runs in production: a runtime for Node.js services, the React kits for
+  the apps around them, and a CLI that creates both with the standard already in place.
+</p>
 
-- **API Specification**: Utilizes the OpenAPI specification to define clear and interactive API documentation.
-- **Scheduled Tasks**: Supports cron functions for reliable execution of scheduled tasks.
-- **Caching**: Offers built-in caching capabilities with the option to extend to Redis for advanced performance needs.
-- **Authentication and Security**: Provides robust authentication middleware and cookie management tools to secure applications effectively.
-- **Utilities**: Includes a vast collection of utilities for data encryption, search, response handling, ID generation, and more, to streamline development workflows.
-- **Logging and Error Handling**: Features a custom log management system to monitor errors and queue messages efficiently.
-- **Database Integration**: Facilitates seamless integration with multiple database engines, simplifying data management.
-- **Modular Architecture**: Designed with an isolated core for easy upgrades, ensuring long-term sustainability of projects.
-- **Event-Driven Communication**: Employs an event-driven architecture to enhance service interoperability and frontend communication.
+<p align="center">
+  <a href="https://linkloom.io">linkloom.io</a> ·
+  <a href="https://www.npmjs.com/org/link-loom">npm</a> ·
+  <a href="https://github.com/link-loom/loom-cli">Link Loom CLI</a>
+</p>
 
-### Link Loom CLI
-Our CLI tool is engineered to supercharge your development process, providing a suite of commands to:
+## Start here
 
-- Scaffold new projects and components quickly.
-- Automate routine development tasks.
-- Integrate seamlessly with the Core SDK, enhancing productivity and reducing setup time.
+```bash
+npx @link-loom/cli
+```
 
-### Link Loom UI SDK
-The UI SDK is tailored for front-end development, offering a library of reusable React components that ensure:
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/link-loom/.github/main/profile/assets/cli-home-dark.svg">
+  <img src="https://raw.githubusercontent.com/link-loom/.github/main/profile/assets/cli-home-light.svg" alt="The Link Loom CLI: Loomi says hi and asks what you want to create" width="760">
+</picture>
 
-- Consistency across user interfaces.
-- Rapid development of visually appealing and user-friendly interfaces.
-- Easy integration with the Core SDK for a cohesive development experience.
+The CLI creates a landing page, a webapp (client or admin) or a backend service, and then every piece inside it (a
+CRUD, a page, a section, a sidebar entry) with the same standard every time. Each flow shows its plan before writing
+anything and ends with the equivalent command, so whatever a person does in the terminal, an agent can repeat.
 
-### Link Loom Example Boilerplate
-This boilerplate project demonstrates the power of Link Loom's ecosystem, showcasing:
+## Meet Loomi
 
-- A practical implementation of the Core SDK's features.
-- Best practices for structuring scalable and maintainable applications.
-- Examples of API endpoints, authentication flows, and frontend integration.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/link-loom/.github/main/profile/assets/loomi.svg" alt="Loomi idle, working, done and stopped" width="760">
+</p>
 
-### Getting Involved
-We invite developers to explore our projects, contribute to the ecosystem, and leverage our tools to build exceptional applications. Each project repository contains detailed documentation and setup instructions to get you started.
+Loomi is the weaver who keeps you company in the CLI. It blinks while you choose, puts on a hard hat while your project
+is woven, waves when it is done, and looks a little sad if you stop halfway, right before telling you how to clean up or
+finish.
 
-### Support and Community
-For support, questions, or to join our vibrant community, please visit the individual project repositories or reach out to us directly. We're here to help and excited to welcome you to the Link Loom family.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/link-loom/.github/main/profile/assets/cli-working-dark.svg">
+  <img src="https://raw.githubusercontent.com/link-loom/.github/main/profile/assets/cli-working-light.svg" alt="Loomi at work with a hard hat while the dependencies install, with the progress beside it" width="760">
+</picture>
 
-Thank you for choosing Link Loom. Together, we're building the future of application development.
+## Built for agents
+
+The CLI is made for AI agents first, with a real terminal UI for people:
+
+- **One JSON document** on stdout with `--json`, stable exit codes and `--dry-run` plans.
+- **An MCP server**: `npx @link-loom/cli mcp` offers the same commands as tools, and generated webapps and landing pages
+  connect it in `.mcp.json`.
+- **Progress** of long runs as JSON lines on stderr, and as `notifications/progress` over MCP.
+- **`AGENTS.md` and skills** in every project, plus a quality gate (`npx link-loom check`) that says what to fix.
+
+## Projects
+
+| Repository | Package | What it is |
+| --- | --- | --- |
+| [loom-cli](https://github.com/link-loom/loom-cli) | `@link-loom/cli` | Creates landing pages, webapps and services, and every piece inside them |
+| [loom-sdk](https://github.com/link-loom/loom-sdk) | `@link-loom/sdk` | The runtime for Node.js services: lifecycle, dependency injection, adapters and workers |
+| [loom-svc-js](https://github.com/link-loom/loom-svc-js) |  | The service template on the SDK |
+| [link-loom-react-shell](https://github.com/link-loom/link-loom-react-shell) | `@link-loom/react-shell` | The frame of every Link Loom webapp: header, sidebar, menus, sign-in screens, language and theme |
+| [link-loom-react-sdk](https://github.com/link-loom/link-loom-react-sdk) | `@link-loom/react-sdk` | React components, Omnisearch, page meta and the record and list kit |
+| [link-loom-cloud-sdk](https://github.com/link-loom/link-loom-cloud-sdk) | `@link-loom/cloud-sdk` | Link Loom Cloud for React: App Engine apps, the launchpad, platforms, support center and billing |
+| [agent-skills](https://github.com/link-loom/agent-skills) |  | Agent skills for Link Loom frontends and backends |
+
+## Contributing
+
+Issues and pull requests are welcome in each repository. Its README says how to run it, and its license file says how
+you can use it.
