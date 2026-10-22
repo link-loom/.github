@@ -31,12 +31,12 @@ anything and ends with the equivalent command, so whatever a person does in the 
 ## Meet Loomi
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/link-loom/.github/main/profile/assets/loomi.svg" alt="Loomi idle, working, done and stopped" width="760">
+  <img src="https://raw.githubusercontent.com/link-loom/.github/main/profile/assets/loomi.svg" alt="Loomi the spider: idle, working, done and stopped" width="760">
 </p>
 
-Loomi is the weaver who keeps you company in the CLI. It blinks while you choose, puts on a hard hat while your project
-is woven, waves when it is done, and looks a little sad if you stop halfway, right before telling you how to clean up or
-finish.
+Loomi is the little spider who weaves your projects in the CLI. It blinks while you choose, puts on a hard hat and picks
+up its tools while your project is woven, waves a leg when it is done, and looks a little sad if you stop halfway, right
+before telling you how to clean up or finish.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/link-loom/.github/main/profile/assets/cli-working-dark.svg">
